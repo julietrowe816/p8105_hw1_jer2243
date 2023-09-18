@@ -66,7 +66,12 @@ hw1_df=tibble(
 
 ##Taking the mean of each variable
 ```{r}
-
+mean(random)
+mean(logical)
+mean(character)
+mean(factor)
 ```
-
+#Mean of the random variable = 0.25
+#Mean of the logical variable = 0.6
+#Mean of the character and factor variables cannot be calculated.
 
