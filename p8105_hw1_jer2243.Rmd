@@ -42,12 +42,31 @@ ggsave("scatterplot_temp_vs_time.png", plot=gg, width=10, height=7)
 ```
 #Overall, temperatures rose throughout the month of January. Throughout each day, the plot generally shows temperatures dropping during the night and rising during the day. Humidity levels seemed to peak around January 11-14.
 
-## Including Plots
+### PROBLEM 2 ###
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+##Variable creation
+```{r}
+  random <- rnorm(10, sd=1)
+  logical <-  random > 0
+  character <- c("A", "B", "C", "D", "E", "F", "G", "H", "I", "J")
+  factor <- factor(rep(c("A", "B", "C"), length.out=10))
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+##Load tidyverse and create dataframe
+```{r}
+library(tidyverse)
+
+hw1_df=tibble(
+  random,
+  logical,
+  character,
+  factor
+)
+```
+
+##Taking the mean of each variable
+```{r}
+
+```
+
+
