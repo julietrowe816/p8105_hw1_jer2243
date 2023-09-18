@@ -4,6 +4,12 @@ author: "Juliet Rowe"
 date: "2023-09-18"
 output: github_document
 ---
+## Load package
+
+```{r}
+library("moderndive")
+```
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
