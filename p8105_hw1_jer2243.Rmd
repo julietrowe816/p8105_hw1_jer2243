@@ -4,16 +4,33 @@ author: "Juliet Rowe"
 date: "2023-09-18"
 output: github_document
 ---
-## Load package
+### PROBLEM 1 ###
+
+## Load package and dataset
 
 ```{r}
 library("moderndive")
+
+data("early_january_weather")
+
 ```
 
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+## Data description
+
+```{r}
+?early_january_weather
+
+nrow(early_january_weather)
+ncol(early_january_weather)
+
+mean_temp <- mean(early_january_weather$temp)
+print(mean_temp)
 ```
+#The "early_january_weather" dataset contains 358 rows representing hourly measurements
+and 15 variables. Variables include "origin", "year,month,day,hour", "temp", "dewp", "humid",
+"wind_dir", "wind_speed", "wind_gust", "precip", "pressure", "visib", and "time_hour".
+#The mean temperature equals 39.58212 degreed F.
 
 ## R Markdown
 
