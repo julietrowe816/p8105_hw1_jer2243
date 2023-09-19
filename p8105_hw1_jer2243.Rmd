@@ -66,12 +66,19 @@ hw1_df=tibble(
 
 ##Taking the mean of each variable
 ```{r}
-mean(random)
-mean(logical)
-mean(character)
-mean(factor)
+mean_random <- mean(pull(hw1_df, random))
+mean_logical <- mean(pull(hw1_df, logical))
+mean_character <- mean(pull(hw1_df, character))
+mean_factor <- mean(pull(hw1_df, factor))
 ```
-#Mean of the random variable = 0.25
-#Mean of the logical variable = 0.6
+#Mean of the random variable = -0.0623
+#Mean of the logical variable = 0.4
 #Mean of the character and factor variables cannot be calculated.
 
+#Applying the as.numeric function to the logical, character, and factor variables.
+```{r}
+as.numeric(logical)
+as.numeric(character)
+as.numeric(factor)
+```
+Applying this function to the logical variable codes "FALSE" as 0 and "TRUE" as 1. This explains how the mean of the logical variable came out to be 0.6. Applying this function to the character variable just causes all of the values to be missing, or "NA", explaining why taking the mean results in an error. Finally, the factor variable.....
