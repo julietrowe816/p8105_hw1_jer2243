@@ -24,7 +24,7 @@ data("early_january_weather")
 nrow(early_january_weather)
 ncol(early_january_weather)
 
-mean_temp <- mean(early_january_weather$temp)
+mean_temp <- mean(pull(early_january_weather, temp))
 print(mean_temp)
 ```
 #The "early_january_weather" dataset contains 358 rows representing hourly measurements
