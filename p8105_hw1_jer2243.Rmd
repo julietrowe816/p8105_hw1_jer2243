@@ -81,4 +81,4 @@ as.numeric(logical)
 as.numeric(character)
 as.numeric(factor)
 ```
-Applying this function to the logical variable codes "FALSE" as 0 and "TRUE" as 1. This explains how the mean of the logical variable came out to be 0.6. Applying this function to the character variable just causes all of the values to be missing, or "NA", explaining why taking the mean results in an error. Finally, the factor variable.....
+Applying this function to the logical variable codes "FALSE" as 0 and "TRUE" as 1. This explains how the mean of the logical variable came out to be 0.6. Applying this function to the character variable just causes all of the values to be missing, or "NA", explaining why taking the mean results in an error, as the characters cannot be converted to a number. Finally, the factor variable takes on the value of its level - in this case, 1, 2, or 3, since we coded it to have 3 levels. 
