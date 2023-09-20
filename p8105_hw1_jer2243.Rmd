@@ -35,11 +35,14 @@ The mean temperature equals 39.58212 degrees Fahrenheit.
 
 ## Scatterplot creation and export
 
-```{r cars}
+```{r}
 library(ggplot2)
 gg <- ggplot(data=early_january_weather, aes(x=time_hour, y=temp, color=humid)) + geom_point()
 
 ggsave("scatterplot_temp_vs_time.png", plot=gg, width=10, height=7)
+
+print(gg)
+
 ```
 Overall, temperatures rose throughout the month of January. Throughout each day, the plot generally shows temperatures dropping during the night and rising during the day. Humidity levels seemed to peak around January 11-14.
 
