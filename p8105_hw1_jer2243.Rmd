@@ -6,7 +6,7 @@ output: github_document
 ---
 # Problem 1
 
-## Load package and dataset
+## Load libraries and dataset
 
 ```{r}
 library("moderndive")
@@ -53,10 +53,8 @@ Overall, temperatures rose throughout the month of January. Throughout each day,
   factor <- factor(rep(c("A", "B", "C"), length.out=10))
 ```
 
-## Load tidyverse and create dataframe
+## Create dataframe
 ```{r}
-library(tidyverse)
-
 hw1_df=tibble(
   random,
   logical,
@@ -77,7 +75,7 @@ Mean of the logical variable = 0.4
 Mean of the character and factor variables cannot be calculated.
 
 ## Applying the as.numeric function to the logical, character, and factor variables.
-```{r}
+```{r, eval=FALSE}
 as.numeric(logical)
 as.numeric(character)
 as.numeric(factor)
